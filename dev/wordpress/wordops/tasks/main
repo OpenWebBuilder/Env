@@ -1,0 +1,5 @@
+---
+- debug:
+    msg: 'hello {{site}}'
+
+- import_tasks: debugging

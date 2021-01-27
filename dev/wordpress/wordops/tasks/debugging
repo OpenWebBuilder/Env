@@ -1,0 +1,8 @@
+---
+- name: Enable Debugging wp-config.php
+  lineinfile:
+    path: '/var/www/{{ site }}/wp-config.php'
+    regexp: "^define\\('WP_DEBUG"
+    line: "define('WP_DEBUG', true);"
+  become: true
+#@ https://stackoverflow.com/questions/38640874/escape-single-quotes-ansible-2-1/38641407#38641407

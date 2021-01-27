@@ -1,0 +1,7 @@
+#!/bin/bash
+hostnamectl set-hostname my.wordops.dev
+wget -qO wo wops.cc && sudo bash wo
+sudo wo stack install
+sudo wo site create site.tld --wp
+
+echo "127.0.0.1 site.tld" | sudo tee -a /etc/hosts

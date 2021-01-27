@@ -1,0 +1,6 @@
+---
+- name: Enable Debugging
+  lineinfile:
+    path: ''
+    regexp: '^'
+    line:
